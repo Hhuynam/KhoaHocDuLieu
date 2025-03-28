@@ -1,2 +1,0 @@
-requirements.txt
-file thông tin về các thư viện được cài đặt 
