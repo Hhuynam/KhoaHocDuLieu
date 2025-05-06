@@ -1,0 +1,25 @@
+Bài 1: Đánh giá cảm xúc văn bản với MultinomialNB
+Mục tiêu: MHiểu cách xử lý dữ liệu văn bản và áp dụng Naive Bayes trong phân loại cảm xúc.
+Yêu cầu:
++ Sử dụng tập dữ liệu IMDb Movie Reviews từ Kaggle (link: https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) để phân loại đánh giá phim là tích cực (positive) hoặc tiêu cực (negative). ==> Từ đó xây dựng một bộ dữ liệu riêng bằng tiếng việt.
++ Xây dựng một Pipeline gồm TfidfVectorizer và MultinomialNB.
++ Đánh giá độ chính xác của mô hình thông qua accuracy_score, classification_report và vẽ ma trận confusion_matrix (Ma trận nhầm lẫn) bằng seaborn
++ Viết một hàm dùng để đánh giá cảm xúc của một người
+
+Bài 2: Dự đoán doanh số bán hàng bằng hàm Hồi quy tuyến tính và Regularization.
+Mục tiêu: Áp dụng hồi quy tuyến tính và chính quy hóa (Ridge Regression) để cải thiện dự đoán.
+Yêu cầu:
++ Sử dụng tập dữ liệu Advertising Dataset từ Kaggle (link: https://www.kaggle.com/datasets/ashydv/advertising-dataset/data), chứa chi phí quảng cáo trên TV, Radio, Newspaper và doanh số bán hàng.
++ Tiền xử lý: Kiểm tra và xử lý giá trị thiếu bằng SimpleImputer (nếu có).
++ Huấn luyện hai mô hình: LinearRegression và Ridge (với alpha=1.0).
++ Đánh giá kết quả huấn luyện bằng R² và RMSE, đồng thời phân tích hệ số của các đặc trưng để xác định yếu tố nào ảnh hưởng lớn nhất đến doanh số.
++ So sánh hiệu suất của LinearRegression và Ridge.
+
+Bài 3: Phân cụm khách hàng với Feature Engineering và GaussianNB
+Mục tiệu: Kết hợp Feature Engineering và Naive Bayes để có thể phân loại khách hàng.
+Yêu cầu:
++ Sử dụng tập dữ liệu Mall Customer Segmentation từ Kaggle (link: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) bao gồm các thông tin cơ bản (ID, tuổi, giới tính, thu nhập, điểm chi tiêu) về khách hàng
++ Tạo nhãn giả bằng cách phân cụm khách hàng dựa trên thu nhập và điểm chi tiêu bằng KMeans (Gợi ý: số cụm n_clusters=3).
++ Tạo thêm một đặc trưng mới (income_to_age - thu nhập dựa theo độ tuổi)
++ Sử dụng GaussianNB để phân loại khách hàng vào các cụm dựa trên các đặc trưng (bao gồm đặc trưng mới).
++ So sánh hiệu suất khi có và không có đặc trưng mới. 
